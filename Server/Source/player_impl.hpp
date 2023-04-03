@@ -751,10 +751,10 @@ private:
 public:
 	void applyAnimation(const AnimationData& animation, PlayerAnimationSyncType syncType) override
 	{
-		if (!animationLibraryValid(animation.lib, *allAnimationLibraries_))
-		{
-			return;
-		}
+		// if (!animationLibraryValid(animation.lib, *allAnimationLibraries_))
+		// {
+		// 	return;
+		// }
 		if (fixesComponent_)
 		{
 			fixesComponent_->clearAnimation(this, nullptr);
